@@ -1,5 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/slide_image"
+        android:layout_width="812dp"
+        android:layout_height="471dp"
+        app:srcCompat="@drawable/illustration1" />
+
+    <Button
+        android:id="@+id/btnSignIn2"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/slide_heading"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/italianno"
+        android:text="SignIn"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:cornerRadius="30dp" />
+
+    <TextView
+        android:id="@+id/slide_welcome"
+        android:layout_width="159dp"
+        android:layout_height="104dp"
+        android:layout_alignBottom="@+id/slide_oval"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/italianno"
+        android:rotation="-21"
+        android:text="Welcome To WSR Food"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/slide_heading"
+        android:layout_width="293dp"
+        android:layout_height="103dp"
+        android:layout_below="@+id/slide_image"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="58dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Fastest Delivery 24/7"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/btnSignUp2"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/slide_heading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="17dp"
+        android:fontFamily="@font/italianno"
+        android:text="SignUp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:cornerRadius="30dp" />
+
+    <ImageView
+        android:id="@+id/slide_oval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/slide_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="6dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/oval" />
 
 </RelativeLayout>
